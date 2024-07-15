@@ -1,0 +1,38 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 1232,
+  "details" : null,
+  "maximumAttendees": 1
+}
+
+
+###
+
+POST http://localhost:3333/events/d660acf0-0c7d-490d-a58f-14a0429a3e08/attendees
+Content-Type: application/json
+
+{
+  "name": "João J Rodrigues",
+  "email": "kerinjaber243@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/d660acf0-0c7d-490d-a58f-14a0429a3e08
+
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+
+###
+
+GET http://localhost:3333/attendees/6/check-in
+
+
+###
+
+GET http://localhost:3333/events/645877b1-85b9-401d-b2cc-08f195217abd/attendees
